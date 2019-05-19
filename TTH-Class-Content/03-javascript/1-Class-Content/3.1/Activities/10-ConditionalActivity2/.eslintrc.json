@@ -1,0 +1,8 @@
+{
+    "rules": {
+        "eqeqeq": 0,
+        "no-constant-condition": 0,
+        "no-useless-concat": 0,
+        "no-self-compare": 0
+    }
+}

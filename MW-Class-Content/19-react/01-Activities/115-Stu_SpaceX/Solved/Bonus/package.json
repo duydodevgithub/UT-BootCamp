@@ -1,0 +1,17 @@
+{
+  "name": "launch-solved",
+  "version": "1.0.0",
+  "description": "solved version of es6 launch example",
+  "main": "launches.js",
+  "scripts": {
+    "start": "babel-node launches.js --presets es2015,stage-2",
+    "start-bonus": "babel-node index.js --presets es2015,stage-2"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "inquirer": "^3.2.3"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JavaScript Dump</title>
+</head>
+  <body>
+
+    <div id="empty-div">
+
+    </div>
+
+
+
+    <!-- We now create a new JavaScript script. -->
+    <script type="text/javascript">
+
+      // Inside, we latch onto the "emptyDiv" using the JavaScript ".getElementById" selector.
+      var targetDiv = document.getElementById("empty-div");
+      console.log(targetDiv);
+
+
+
+      // We then use the JavaScript method ".innerHTML" to change the content to "Hello friends!"
+      targetDiv.innerHTML = "<h1>Hello friends!</h1>";
+
+    </script>
+
+  </body>
+</html>

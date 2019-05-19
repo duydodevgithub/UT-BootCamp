@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <h1>Drink Selection!</h1>
+  <hr>
+
+  <div id="drink-options"></div>
+
+  <script type="text/javascript">
+
+    var drinkList = [
+      "Moscow Mule: $5",
+      "Grasshopper: $7",
+      "Cuba Libre: $6",
+      "White Russian: $4",
+      "Paloma: $3",
+      "Martini: $6",
+      "Mojito: $8",
+      "Alien Brain: $6",
+      "Irish Car Bomb: $4"
+    ];
+
+    // Using JavaScript programmatically append each drinkList item to the "drink-options" div
+    // HINT: you will need a for loop to go over each element in the list
+
+
+      for (i = 0; i < drinkList.length; i++) {
+
+
+            $('<div>').html(drinkList[i]);
+            $('#drink-options').append();
+
+
+
+            }
+
+
+
+
+
+  </script>
+
+</body>
+</html>

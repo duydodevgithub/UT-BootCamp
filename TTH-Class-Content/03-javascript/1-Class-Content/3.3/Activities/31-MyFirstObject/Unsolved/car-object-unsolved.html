@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+
+    <script>
+
+      var car = {
+        make: "Honda",
+        model: "Fit",
+        color: "Opalescent White",
+        mileage: 4300,
+        isWorking: true,
+
+        driveToWork: function() {
+
+          console.log("$$$$$$");
+        },
+
+        driveAroundWorld: function() {
+
+          alert("Old Mileage: " + this.mileage);
+          
+          this.mileage = this.mileage + 24000;
+
+          alert("New Mileage: " + this.mileage);
+          alert("Car needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          alert("Car is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          alert("Honk! Honk!");
+        }
+      };
+
+      function reWriteStats(){
+
+          console.log(car.make+", "+car.model+", "+car.color+", "+ car.mileage+", "+ car.isWorking);
+      }
+      
+      //keyup
+        document.onkeyup = function(event){
+
+            
+
+            if(event.key==='t'){
+              car.driveToWork()
+              reWriteStats();
+            }
+
+            if(event.key==='h'){
+              car.honk();
+
+            }
+
+            if(event.key==='w'){
+
+              car.driveAroundWorld();
+              reWriteStats();
+            }
+
+            if(event.key==='u'){
+
+              car.getTuneUp();
+              reWriteStats();
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+  </body>
+</html>
